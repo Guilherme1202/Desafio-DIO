@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="PT">
+
+<head>
+    <title>Aprendendo HTML</title>
+</head>
+
+<body>
+    <h1>Os primeiros passos com HTML</h1>
+    <hr/>
+    <h2>Índice</h2>
+    <ul>
+        <li><a href="#html" title="Clique aqui e confira">Entendendo o que é o HTML</a></li>
+        <li><a href="#tag"  title="Clique aqui e confira">O que são Tags</a></li>
+        <li><a href="#lista" title="Clique aqui e confira">Listas</a>
+            <ul>
+                <li><a href="#listaOl" title="Clique aqui e confira">Lista ordenada</a></li>
+                <li><a href="#listaUl" title="Clique aqui e confira">Lista não ordenada</a></li> 
+            </ul>
+        <li><a href="ref.html" title="Ir para referências">Referências</a></li>
+        </li>
+    </ul>
+    <hr/>
+
+    <h2 id="html">HTML</h2>
+    <p>HTML é a sigla em inglês para <strong><i>Hypertext Markup Language</i></strong>, que seria linguagem de marcação de hipertexto. O HTML é formado por Tags (< > < />), tudo o que está entre as Tags são HTML. </p>
+    <p> O HTML nada mais é que uma linguagem usada para criar páginas web por meio de marcadores (tags) e atributos (propiedades), ele é constituido por  2 partes principais, o <strong>HEAD (CABEÇALHO)</strong> e o <strong>BODY (CORPO)</strong>, no cabeçalho é onde vai ficar o titulo da página, ou seja, o nome da aba da página, que é constituido por uma tag chamada "< title >", já no body é todo o conteúdo de texto, imagem e vídeos que será exibido na pagina, ou seja, é onde fica o corpo do texto. </p>
+    <p>Exemplo:</p>
+    <img src="EX1.png"/>
+
+    <h2 id="tag">O que são Tags ( < > )</h2>
+    <p>Tags HTML, são usadas para informar ao navegador que tipo de estrutura está sendo construída, podendo  ser títulos, parágrafos, imagens, links, entre outros.</p>
+    <p>As tags são formadas por uma estrutura própria, iniciam com o sinal de “menor (<)”, em seguida vem o nome do elemento e para o fechamento, utiliza-se a barra com o sinal de maior (/>)”, para poder sinalizar o fechamento da Tag.</p>
+    <p>Exemplo:</p>
+    <img src="EX2.png"/>
+
+    <p>Existem inúmero tipos diferentes de tags, como a tag de parágrafo(< p >), cabeçalho(< h1 >, < h2 >, < h3 >, < h4 >, < h5 >), imagem (< img >), entre outros.
+        <blockquote> Para mais informações sobre quais tipos e os usos das tags, acesse o link: <a href="https://www.w3schools.com/tags/" title="Clique aqui e confira" target="_blank">https://www.w3schools.com/tags/ </a></p></blockquote>
+    
+    <h2 id="lista">Listas (< li >)</h2>
+    <p>As listas são compostas pela tag < li > e existem 2 tipos de listas, as listas ordenadas (ordered list) e as listas não ordenadas (unordered list).
+
+    <h3 id="listaOl">Lista ordenada (< ol > )</h3>
+    <p>Como o nome sugere, listas ordenas seguem uma ordem crescente exibida com  elementos numerados, cada elemento deve ser marcado com a tag < li > < /li >, que serve para identificar os itens existentes na lista.</p>
+    </p>
+
+    <p>Aqui está um exemplo de como montar uma lista ordenada:</p>
+    <img src="listaOl.png"/>
+    <p>Resultado:</p>
+    <ol>
+        <li>Este é o primeiro item da lista</li>
+        <li>Este é o segundo item da lista</li>
+        <li>Este é o terceiro item da lista</li>
+    </ol>
+    
+    <h3 id="listaUl"> Lista não ordenada (< ul >)</h3>
+    <p>A lista não ordenada, faz com que os elementos desta lista não sejam numerados, apenas são marcados com ponto de lista ou bulletpoints.</p>
+    <p>Aqui está um exemplo de como montar uma lista não ordenada:</p>
+    <img src="ListaUl.png"/>
+    <p>Resultado:</p>
+    <ul>
+        <li>Maçã</li>
+        <li>Uva</li>
+        <li>Banana</li>
+        <li>Kiwi</li>
+    </ul>
+    <p>Note que, tanto a lista ordenada quanto a lista não ordenada, possuem praticamente a mesma estrutura, o que difere as duas são o tipo de lista que será utilizada, sendo necessário informar primeiramente o tipo de lista (< ol >  para ordenada ou < ul > para não ordenada) e depois os elementos da lista em questão seguidos da tag < li >.</p>
+    <p>Também é possível ter uma lista dentro da outra, como por exemplo:</p>
+    <img src="ExListas.png"/>
+    <p>Resultado:</p>
+    <ol>
+        <li>Maçã 
+            <ul>
+                <li>A maçã é uma fruta de origem asiática e há mais de sete mil espécies diferentes, cada uma com características específicas, mas com propriedades nutricionais semelhantes.</li>
+                <li>Fonte de nutrientes importantes que estimulam o corpo a prevenir doenças, além de ser saborosa e prática de carregar.</li>
+            </ul>
+            <li>Uva
+                <ul>
+                    <li>A uva é uma fruta rica em resveratrol, um composto bioativo com propriedades antioxidantes, anti-inflamatórias e cardioprotetoras, sendo encontrado principalmente nas cascas, folhas e sementes dessa fruta, estando em maior quantidade nas uvas de cor roxa e vermelha.</li.> 
+                    <li>Apesar de ser uma fruta com bastante açúcar, a uva tem baixo índice glicêmico e ajuda a diminuir a quantidade de açúcar no sangue.</li>
+                </ul>
+            </li>
+        </li>
+    </ol>
+</body>
+</html>
